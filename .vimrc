@@ -9,8 +9,10 @@ syntax on                   " Enable syntax highlighting.
 set visualbell              " Flash the screen instead of beeping.
 set number                  " Display line numbers.
 set showcmd                 " Show partial commands.
-set cursorline              " Highlight the cursor's current line.
 set showmatch               " Briefly highlight a matching bracket or brace.
+set cursorline              " Highlight the cursor's current line.
+" Use underline rather than fill for the cursor's current line.
+hi CursorLine cterm=underline
 
 set colorcolumn=50,72,80    " Add vertical rulers for commit messages and code.
 " Use a dark grey for the vertical ruler background.
