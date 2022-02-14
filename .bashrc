@@ -13,3 +13,6 @@ alias lah='lh --all'
 # Always use the `pushd` stack for moving about.
 alias cd='pushd  > /dev/null'
 
+# Render markdown to html
+alias md=~/bin/markdown/Markdown.pl
+
