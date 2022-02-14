@@ -23,3 +23,18 @@ alias ga='git add'
 alias gap='git add --patch'
 alias gc='git commit'
 
+# Don't log duplicate entries.
+HISTCONTROL=ignoredups
+
+# Remember the last 1000 commands this session.
+HISTSIZE=1000
+
+# Append those last 1000 commands to the log file.
+shopt -s histappend
+
+# Keep up to 10000 lines in the log file.
+HISTFILESIZE=10000
+
+# A quick history search shortcut.
+alias hg='history | grep'
+
