@@ -41,3 +41,18 @@ HISTFILESIZE=10000
 # A quick history search shortcut.
 alias hg='history | grep'
 
+# Set up some sensibly named colours.
+blk="\e[30m"
+red="\e[31m"
+grn="\e[32m"
+brn="\e[33m"
+blu="\e[34m"
+prp="\e[35m"
+cyn="\e[36m"
+gry="\e[37m"
+clr="\e[0m"
+
+# Spruce up the command prompt.
+export PS1="${cyn}\u${blu}@${grn}\h${blu}:${brn}\w ${blu}\$${clr} "
+export PS2="${prp}>${clr} "
+
