@@ -23,6 +23,9 @@ alias ga='git add'
 alias gap='git add --patch'
 alias gc='git commit'
 
+# Enable GPG signing from bash.
+export GPG_TTY=$(tty)
+
 # Don't log duplicate entries.
 HISTCONTROL=ignoredups
 
