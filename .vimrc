@@ -12,6 +12,10 @@ set showcmd                 " Show partial commands.
 set cursorline              " Highlight the cursor's current line.
 set showmatch               " Briefly highlight a matching bracket or brace.
 
+set colorcolumn=50,72,80    " Add vertical rulers for commit messages and code.
+" Use a dark grey for the vertical ruler background.
+highlight ColorColumn ctermbg=0
+
 set ignorecase              " Ignore case sensitivity
 set smartcase               " while running searches.
 set hlsearch                " Highlight search results,
