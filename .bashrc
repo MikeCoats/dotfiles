@@ -1,3 +1,5 @@
+# Make sure we're launching in a mode that supports our colour choices.
+export TERM=xterm-256color
 
 # Spruce up the default `ls` appearance.
 alias ls='ls --classify --color=auto --show-control-chars'

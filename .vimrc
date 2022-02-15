@@ -16,7 +16,7 @@ hi CursorLine cterm=underline
 
 set colorcolumn=50,72,80    " Add vertical rulers for commit messages and code.
 " Use a dark grey for the vertical ruler background.
-highlight ColorColumn ctermbg=0
+highlight ColorColumn ctermbg=8
 
 set ignorecase              " Ignore case sensitivity
 set smartcase               " while running searches.
