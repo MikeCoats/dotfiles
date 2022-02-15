@@ -54,7 +54,15 @@ cyn="\e[36m"
 gry="\e[37m"
 clr="\e[0m"
 
+# Get a lower-case version of the host name for the prompt.
+hostname=$(hostname)
+host=${hostname,,}
+
+# Get a lower-case version of our user name for the prompt.
+whoami=$(whoami)
+user=${whoami,,}
+
 # Spruce up the command prompt.
-export PS1="${cyn}\u${blu}@${grn}\h${blu}:${brn}\w ${blu}\$${clr} "
+export PS1="${cyn}${user}${blu}@${grn}${host}${blu}:${brn}\w ${blu}\$${clr} "
 export PS2="${prp}>${clr} "
 
