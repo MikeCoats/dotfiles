@@ -1,0 +1,3 @@
+[submodule ".vim/pack/installed/start/plantuml-syntax"]
+	path = .vim/pack/installed/start/plantuml-syntax
+	url = git@github.com:aklt/plantuml-syntax.git
