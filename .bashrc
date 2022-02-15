@@ -16,7 +16,7 @@ alias lah='lh --all'
 alias cd='pushd  > /dev/null'
 
 # Render markdown to html.
-alias md=~/bin/markdown/Markdown.pl
+alias md=~/vendor/markdown/Markdown.pl
 
 # Common git commands.
 alias gs='git status'
