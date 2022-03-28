@@ -66,3 +66,10 @@ user=${whoami,,}
 export PS1="${cyn}${user}${blu}@${grn}${host}${blu}:${brn}\w ${blu}\$${clr} "
 export PS2="${prp}>${clr} "
 
+# Any system-specific configuration can go in a local file and not be
+# shared between computers.
+if [ -f .bashrc_local ];
+then
+  . .bashrc_local
+fi
+
