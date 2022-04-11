@@ -1,0 +1,12 @@
+[user]
+  name = Mike Coats
+  email = i.am@mikecoats.com
+  signingkey = 9B44C07F2070C66A906AF1B61009FADA9F1571BA
+[includeIf "gitdir:~/projects/naturescot/"]
+  path = ~/.gitconfig_naturescot
+[commit]
+  gpgsign = true
+[core]
+  editor = vim
+  autocrlf = input
+
