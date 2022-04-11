@@ -37,6 +37,7 @@ nnoremap j gj
 nnoremap <Down> g<Down>
 nnoremap k gk
 nnoremap <Up> g<Up>
+set mouse=a                 " Enable mouse input including as scroll-wheeling.
 
 set tabstop=2 shiftwidth=2  " Set all tabs to 2 spaces.
 set expandtab               " Insert tabs with spaces.
