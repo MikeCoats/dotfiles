@@ -44,15 +44,16 @@ HISTFILESIZE=10000
 alias hg='history | grep'
 
 # Set up some sensibly named colours.
-blk="\e[30m"
-red="\e[31m"
-grn="\e[32m"
-brn="\e[33m"
-blu="\e[34m"
-prp="\e[35m"
-cyn="\e[36m"
-gry="\e[37m"
-clr="\e[0m"
+# Use tput output rather than the ansi codes directly for portability.
+blk="$(tput setaf 0)"
+red="$(tput setaf 1)"
+grn="$(tput setaf 2)"
+brn="$(tput setaf 3)"
+blu="$(tput setaf 4)"
+prp="$(tput setaf 5)"
+cyn="$(tput setaf 6)"
+gry="$(tput setaf 7)"
+clr="$(tput sgr0)"
 
 # Get a lower-case version of the host name for the prompt.
 hostname=$(hostname)
