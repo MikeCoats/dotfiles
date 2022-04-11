@@ -64,8 +64,14 @@ whoami=$(whoami)
 user=${whoami,,}
 
 # Spruce up the command prompt.
-export PS1="${cyn}${user}${blu}@${grn}${host}${blu}:${brn}\w ${blu}\$${clr} "
-export PS2="${prp}>${clr} "
+# All non-printable characters need to be wrapped in \[ and \] to stop bash from
+# including them in the character count and line-wrapping too early.
+export PS1="\[${cyn}\]${user}\[${blu}\]@\[${grn}\]${host}\[${blu}\]:\[${brn}\]\w \[${blu}\]\$\[${clr}\] "
+export PS2="\[${prp}\]>\[${clr}\] "
+
+# After every command update the drawable window size in case we've resized our
+# terminal window.
+shopt -s checkwinsize
 
 # Any system-specific configuration can go in a local file and not be
 # shared between computers.
